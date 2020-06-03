@@ -73,4 +73,6 @@ names(total_df)[names(total_df) == "V1"] <- "subject"
 
 #Finding the mean of the total dataframe for each variable grouped by subject & activity
 mean_per_subject_activity <- aggregate(total_df[, 3:81], list(total_df$subject,total_df$activity), mean)
+names(mean_per_subject_activity)[names(mean_per_subject_activity) == "Group.1"] <- "subject"
+names(mean_per_subject_activity)[names(mean_per_subject_activity) == "Group.2"] <- "activity"
 View(mean_per_subject_activity)
