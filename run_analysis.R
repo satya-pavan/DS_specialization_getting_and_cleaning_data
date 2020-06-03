@@ -30,11 +30,11 @@ features = read.table("features.txt")
 features_with_mean_std <- features[grep("mean|std", features[,2]), ]
 
 
-#Filtering out the total_df to retain only the columns with mean or std in their names
+#Filtering the combined dataset to retain only the columns with 'mean' or 'std' in their names
 total_df <- total_df[,unlist(features_with_mean_std["V1"])]
 
 
-#Removing/cleaning out the column names that have junk characters - [,(,),-
+#Removing/cleaning out the column names that have junk characters - '[', '(', ')', '-'
 clean_col_names = gsub("[()-]","",features_with_mean_std[,2])
 colnames(total_df) <- clean_col_names
 
