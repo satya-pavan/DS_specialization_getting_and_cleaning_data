@@ -3,6 +3,12 @@ Assignment for DS specialization course - getting and cleaning data
 
 This repo contains an R script that is used to clean and pre-process the smart watch dataset (accelerometer and gyroscope readings). Source data for this project can be found here --> http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+
+## Files:
+	codebook.md
+	run_analysis.R
+	README.md
+
 ## run_analysis.R  
 The above script contains the R code that does the following tasks on the smart watch dataset.
 	
@@ -13,3 +19,4 @@ The above script contains the R code that does the following tasks on the smart 
 	5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 	
 Note: This script assumes that the file is downloaded and available in local directory
+
